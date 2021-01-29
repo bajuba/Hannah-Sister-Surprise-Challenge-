@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	 crossorigin="anonymous">
+
+	<title>Uncle PP's Secret Challenge Site for Hannah Sister 2021</title>
+</head>
+
+<body>
+  <audio id="ghostsound" src="static/ghost.mp3" ></audio>
+  <audio id="shoesound" src="static/shoes.mp3" ></audio>
+  <audio id="dragonsound" src="static/dragon.mp3" ></audio>
+	<main class="container">
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Welcome to Your 2021 Secret Surprise</h1>
+    <p class="lead">Prove you are my real sister by answering these riddles three. <b>You need to have sound on and up!</b></p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Ghosts of the Past</h4>
+        </div>
+        <div class="card-body">
+          <img style="width:100%;"class="d-block mx-auto mb-4" src="/static/doll.jpg">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>I am a floating stuffed pillow doll that chases you.</li>
+            <li>My catch-phrase is "I'm the ghost of ______"</li>
+          </ul>
+
+          
+            <div class="input-group">
+              <input type="text" id='ghostbox1' class="form-control" placeholder="guess?">
+              <button onclick="ghost()" class="btn btn-secondary">Check Answer</button>
+            </div>
+          <br>  
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Shoes of the Past</h4>
+        </div>
+        <div class="card-body">
+          <img style="width:100%;"class="d-block mx-auto mb-4" src="/static/shoes.jpg">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Leprechaun, Leprosy, Leprechaun ______</li>
+            <li>Leprosy, Leprechaun, Leprosy ______"</li>
+          </ul>
+            <div class="input-group">
+              <input type="text" id='shoebox1' class="form-control" placeholder="verse 1">
+              <input type="text" id='shoebox2' class="form-control" placeholder="verse 2">
+              <button onclick="shoes()" class="btn btn-secondary">Check Answer</button>
+            </div>
+          <br>  
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 fw-normal">Dragons of the Past</h4>
+        </div>
+        <div class="card-body">
+          <img style="width:100%;"class="d-block mx-auto mb-3" src="/static/dragon.png">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Do I hear _____? One time I saw a _____! Silence! back to work _____.</li>
+          </ul>
+            <div class="input-group">
+              <input type="text" id='dragonbox1' class="form-control" placeholder="guard">
+              <input type="text" id='dragonbox2' class="form-control" placeholder="slave">
+              <input type="text" id='dragonbox3' class="form-control" placeholder="guard">
+              <button onclick="dragon()" class="btn btn-secondary">Check Answer</button>
+            </div>
+          <br>  
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+  </div>
+
+  <div class="row justify-content-center text-center">
+    <div class="col-3">
+    </div>
+    <div class="col-6">
+      <span id="doorMessage">What's this door?</span>
+      <img id="door" onclick="doorClick()" style="width:100%;"class="d-block mx-auto mb-4" src="/static/doorclose.png">
+    </div>
+    <div class="col-3">
+    </div>
+  </div>
+
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-muted">&copy; Uncle PP 2020</small>
+      </div>
+      
+  </footer>
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="static/script.js" ></script>
+    
+  </body>
+</html>
